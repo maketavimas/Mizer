@@ -37,7 +37,7 @@ confirmBtn.addEventListener("click", async () => {
     }
 
     try {
-        const res = await fetch("download-gate.maketavimas.workers.dev", {
+        const res = await fetch("https://download-gate.maketavimas.workers.dev", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
