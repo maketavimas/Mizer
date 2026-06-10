@@ -2,30 +2,33 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Download</title>
+  <title>Download App</title>
 
   <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 </head>
 
 <body>
 
-<h1>My App</h1>
+  <h1>My App</h1>
 
-<button id="downloadBtn">Download</button>
+  <button id="downloadBtn">Download</button>
 
-<div id="modal" style="display:none;">
-  <input type="email" id="email" placeholder="email" />
+  <div id="modal" style="display:none;">
 
-  <!-- TURNSTILE (NO JS CALLBACKS) -->
-  <div class="cf-turnstile"
-       data-sitekey="0x4AAAAAADiCqoTki0utuD0b">
+    <input type="email" id="email" placeholder="Enter email" />
+
+    <!-- TURNSTILE -->
+    <div class="cf-turnstile"
+         data-sitekey="0x4AAAAAADiCqoTki0utuD0b"
+         data-callback="onTurnstileSuccess">
+    </div>
+
+    <button id="confirmBtn">Confirm</button>
+    <button id="cancelBtn">Cancel</button>
+
   </div>
 
-  <button id="confirmBtn">Confirm</button>
-  <button id="cancelBtn">Cancel</button>
-</div>
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 
 </body>
 </html>
