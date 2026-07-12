@@ -2,33 +2,571 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Download App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <!-- Primary SEO -->
+  <title>Textymizer — Offline Document Anonymizer</title>
+  <meta name="description" content="Mask your private data before sharing documents with lawyers, accountants or AI tools. Fast, simple, offline document anonymization software. Free version available." />
+  <meta name="keywords" content="document anonymizer, PDF anonymizer, redact PDF, mask sensitive data, offline anonymization, data privacy tool" />
+  <link rel="canonical" href="https://textymizer.com/" />
+
+  <!-- Open Graph (Facebook, LinkedIn, WhatsApp) -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:url"         content="https://textymizer.com/" />
+  <meta property="og:title"       content="Textymizer — Offline Document Anonymizer" />
+  <meta property="og:description" content="Mask your private data before sharing documents with lawyers, accountants or AI tools. Fast, simple, offline document anonymization software." />
+  <meta property="og:image"       content="https://textymizer.com/og-image.png" />
+  <meta property="og:image:width"  content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:site_name"   content="Textymizer" />
+  <meta property="og:locale"      content="en_US" />
+
+  <!-- Twitter / X Card -->
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:url"         content="https://textymizer.com/" />
+  <meta name="twitter:title"       content="Textymizer — Offline Document Anonymizer" />
+  <meta name="twitter:description" content="Mask your private data before sharing documents with lawyers, accountants or AI tools. Fast, simple, offline document anonymization software." />
+  <meta name="twitter:image"       content="https://textymizer.com/og-image.png" />
+
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Textymizer",
+    "url": "https://textymizer.com",
+    "description": "Offline document anonymization desktop application. Mask sensitive data in PDF files before sharing with lawyers, accountants or AI tools.",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Windows",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD",
+      "name": "Free version"
+    },
+    "featureList": [
+      "PDF document anonymization",
+      "Offline processing — no data uploaded",
+      "Export to Excel",
+      "Any language support"
+    ]
+  }
+  </script>
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="legal.css" />
   <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 </head>
-
 <body>
 
-  <h1>My App</h1>
+  <!-- ───────────────────────── HEADER ───────────────────────── -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="#top" class="logo" aria-label="textymizer home">
+        <svg class="logo-mark" viewBox="0 0 154.88 32.00" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="textymizer">
+  <g transform="translate(0,0) scale(0.16000)">
+    <rect x="0" y="0" width="160" height="200" rx="28" fill="#16A085"/>
+    <rect x="24" y="34" width="48" height="9" rx="3" fill="#FFFFFF" opacity="0.4"/>
+    <rect x="78" y="32" width="58" height="13" rx="3" fill="#FFFFFF"/>
+    <rect x="24" y="58" width="112" height="13" rx="3" fill="#FFFFFF"/>
+    <rect x="24" y="84" width="30" height="9" rx="3" fill="#FFFFFF" opacity="0.4"/>
+    <rect x="60" y="82" width="44" height="13" rx="3" fill="#FFFFFF"/>
+    <rect x="110" y="84" width="26" height="9" rx="3" fill="#FFFFFF" opacity="0.4"/>
+    <rect x="24" y="109" width="70" height="9" rx="3" fill="#FFFFFF" opacity="0.4"/>
+    <rect x="24" y="134" width="38" height="9" rx="3" fill="#FFFFFF" opacity="0.4"/>
+    <rect x="68" y="132" width="68" height="13" rx="3" fill="#FFFFFF"/>
+    <rect x="24" y="159" width="90" height="9" rx="3" fill="#FFFFFF" opacity="0.4"/>
+  </g>
+  <g transform="translate(33.100,22.357) scale(0.0117188,-0.0117188)" fill="#16A085">
+<path d="M156 1061H186V1225Q186 1291 189.5 1328.5Q193 1366 209 1393Q225 1421 255.0 1438.5Q285 1456 322 1456Q374 1456 416 1417Q444 1391 451.5 1353.5Q459 1316 459 1247V1061H559Q617 1061 647.5 1033.5Q678 1006 678 963Q678 908 634.5 886.0Q591 864 510 864H459V362Q459 298 463.5 263.5Q468 229 487.5 207.5Q507 186 551 186Q575 186 616.0 194.5Q657 203 680 203Q713 203 739.5 176.5Q766 150 766 111Q766 45 694.0 10.0Q622 -25 487 -25Q359 -25 293.0 18.0Q227 61 206.5 137.0Q186 213 186 340V864H150Q91 864 60.0 892.0Q29 920 29 963Q29 1006 61.5 1033.5Q94 1061 156 1061Z" transform="translate(0,0)"/>
+<path d="M903 463H369Q370 370 406.5 299.0Q443 228 503.5 192.0Q564 156 637 156Q686 156 726.5 167.5Q767 179 805.0 203.5Q843 228 875.0 256.0Q907 284 958 332Q979 350 1018 350Q1060 350 1086.0 327.0Q1112 304 1112 262Q1112 225 1083.0 175.5Q1054 126 995.5 80.5Q937 35 848.5 5.0Q760 -25 645 -25Q382 -25 236.0 125.0Q90 275 90 532Q90 653 126.0 756.5Q162 860 231.0 934.0Q300 1008 401.0 1047.5Q502 1087 625 1087Q785 1087 899.5 1019.5Q1014 952 1071.0 845.0Q1128 738 1128 627Q1128 524 1069.0 493.5Q1010 463 903 463ZM369 618H864Q854 758 788.5 827.5Q723 897 616 897Q514 897 448.5 826.5Q383 756 369 618Z" transform="translate(725,0)"/>
+<path d="M733 88 535 379 332 88Q288 27 257.5 1.0Q227 -25 180 -25Q128 -25 91.5 7.5Q55 40 55 82Q55 125 111 205L358 559L139 854Q82 927 82 981Q82 1023 116.0 1054.0Q150 1085 205 1085Q253 1085 284.5 1058.0Q316 1031 358 973L535 731L707 973Q750 1033 781.5 1059.0Q813 1085 860 1085Q914 1085 949.5 1054.5Q985 1024 985 981Q985 950 970.5 921.5Q956 893 926 854L707 559L954 205Q1012 122 1012 80Q1012 37 976.0 6.0Q940 -25 887 -25Q840 -25 807.5 2.0Q775 29 733 88Z" transform="translate(1942,0)"/>
+<path d="M156 1061H186V1225Q186 1291 189.5 1328.5Q193 1366 209 1393Q225 1421 255.0 1438.5Q285 1456 322 1456Q374 1456 416 1417Q444 1391 451.5 1353.5Q459 1316 459 1247V1061H559Q617 1061 647.5 1033.5Q678 1006 678 963Q678 908 634.5 886.0Q591 864 510 864H459V362Q459 298 463.5 263.5Q468 229 487.5 207.5Q507 186 551 186Q575 186 616.0 194.5Q657 203 680 203Q713 203 739.5 176.5Q766 150 766 111Q766 45 694.0 10.0Q622 -25 487 -25Q359 -25 293.0 18.0Q227 61 206.5 137.0Q186 213 186 340V864H150Q91 864 60.0 892.0Q29 920 29 963Q29 1006 61.5 1033.5Q94 1061 156 1061Z" transform="translate(3009,0)"/>
+<path d="M393 -59 418 2 82 848Q51 921 51 954Q51 989 69.0 1019.0Q87 1049 118.5 1067.0Q150 1085 184 1085Q243 1085 273.0 1047.5Q303 1010 326 940L557 268L776 893Q802 969 823.0 1012.0Q844 1055 867.5 1070.0Q891 1085 934 1085Q965 1085 993.5 1068.5Q1022 1052 1037.5 1024.0Q1053 996 1053 965Q1049 946 1040.0 911.0Q1031 876 1018 840L662 -92Q616 -215 572.0 -285.0Q528 -355 455.5 -392.5Q383 -430 260 -430Q140 -430 80.0 -404.0Q20 -378 20 -309Q20 -262 48.5 -236.5Q77 -211 133 -211Q155 -211 176 -217Q202 -223 221 -223Q268 -223 295.0 -209.0Q322 -195 343.5 -160.5Q365 -126 393 -59Z" transform="translate(3734,0)"/>
+<path d="M1049 510V147Q1049 61 1010.0 18.0Q971 -25 907 -25Q845 -25 806.5 18.0Q768 61 768 147V582Q768 685 761.0 742.0Q754 799 723.0 835.5Q692 872 625 872Q491 872 448.5 780.0Q406 688 406 516V147Q406 62 367.5 18.5Q329 -25 266 -25Q204 -25 164.5 18.5Q125 62 125 147V928Q125 1005 160.5 1045.0Q196 1085 254 1085Q310 1085 347.5 1047.5Q385 1010 385 944V918Q456 1003 537.0 1043.0Q618 1083 717 1083Q820 1083 894.0 1042.0Q968 1001 1016 918Q1085 1002 1164.0 1042.5Q1243 1083 1339 1083Q1451 1083 1532.0 1039.0Q1613 995 1653 913Q1688 839 1688 680V147Q1688 61 1649.0 18.0Q1610 -25 1546 -25Q1484 -25 1444.5 18.5Q1405 62 1405 147V606Q1405 694 1397.5 747.0Q1390 800 1357.0 836.0Q1324 872 1257 872Q1203 872 1154.5 840.0Q1106 808 1079 754Q1049 685 1049 510Z" transform="translate(4844,0)"/>
+<path d="M414 930V141Q414 59 375.0 17.0Q336 -25 276 -25Q216 -25 178.5 18.0Q141 61 141 141V922Q141 1003 178.5 1044.0Q216 1085 276 1085Q336 1085 375.0 1044.0Q414 1003 414 930ZM279 1212Q222 1212 181.5 1247.0Q141 1282 141 1346Q141 1404 182.5 1441.5Q224 1479 279 1479Q332 1479 373.0 1445.0Q414 1411 414 1346Q414 1283 374.0 1247.5Q334 1212 279 1212Z" transform="translate(6656,0)"/>
+<path d="M883 772 383 213H918Q983 213 1016.0 182.5Q1049 152 1049 104Q1049 58 1016.5 29.0Q984 0 918 0H178Q100 0 61.5 34.0Q23 68 23 127Q23 162 50.0 197.5Q77 233 162 328Q252 428 325.5 509.0Q399 590 462.0 660.5Q525 731 566.5 780.0Q608 829 633 864H227Q143 864 100.0 879.0Q57 894 57 958Q57 1005 89.5 1033.0Q122 1061 182 1061H809Q896 1061 942.5 1035.5Q989 1010 989 944Q989 922 980.0 898.5Q971 875 960.0 860.0Q949 845 930.0 823.5Q911 802 883 772Z" transform="translate(7211,0)"/>
+<path d="M903 463H369Q370 370 406.5 299.0Q443 228 503.5 192.0Q564 156 637 156Q686 156 726.5 167.5Q767 179 805.0 203.5Q843 228 875.0 256.0Q907 284 958 332Q979 350 1018 350Q1060 350 1086.0 327.0Q1112 304 1112 262Q1112 225 1083.0 175.5Q1054 126 995.5 80.5Q937 35 848.5 5.0Q760 -25 645 -25Q382 -25 236.0 125.0Q90 275 90 532Q90 653 126.0 756.5Q162 860 231.0 934.0Q300 1008 401.0 1047.5Q502 1087 625 1087Q785 1087 899.5 1019.5Q1014 952 1071.0 845.0Q1128 738 1128 627Q1128 524 1069.0 493.5Q1010 463 903 463ZM369 618H864Q854 758 788.5 827.5Q723 897 616 897Q514 897 448.5 826.5Q383 756 369 618Z" transform="translate(8278,0)"/>
+<path d="M412 369V141Q412 58 373.0 16.5Q334 -25 274 -25Q215 -25 177.0 17.0Q139 59 139 141V901Q139 1085 272 1085Q340 1085 370.0 1042.0Q400 999 403 915Q452 999 503.5 1042.0Q555 1085 641 1085Q727 1085 808.0 1042.0Q889 999 889 928Q889 878 854.5 845.5Q820 813 780 813Q765 813 707.5 831.5Q650 850 606 850Q546 850 508.0 818.5Q470 787 449.0 725.0Q428 663 420.0 577.5Q412 492 412 369Z" transform="translate(9495,0)"/>
+  </g>
+</svg>
+      </a>
 
-  <button id="downloadBtn">Download</button>
+      <nav class="main-nav" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#versions">Versions</a>
+        <a href="#how-it-works">How it works</a>
+        <a href="#faq">FAQ</a>
+        <a href="Textymizer_Manual.pdf" target="_blank" rel="noopener">Manual</a>
+        <a href="#" id="contactNavBtn">Contact</a>
+      </nav>
 
-  <div id="modal" style="display:none;">
-
-    <input type="email" id="email" placeholder="Enter email" />
-
-    <!-- TURNSTILE -->
-    <div class="cf-turnstile"
-         data-sitekey="0x4AAAAAADiCqoTki0utuD0b"
-         data-callback="onTurnstileSuccess">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
     </div>
+  </header>
 
-    <button id="confirmBtn">Confirm</button>
-    <button id="cancelBtn">Cancel</button>
+  <main id="top">
 
+    <!-- ───────────────────────── HERO ───────────────────────── -->
+    <section class="hero">
+      <div class="hero-inner">
+        <h1>Offline document anonymizer</h1>
+        <p class="hero-subtitle">
+          Mask your personal data before using AI or sharing sensitive documents<br />
+          with easy-to-use anonymization software.
+        </p>
+      </div>
+    </section>
+
+    <!-- ───────────────────────── FEATURES ───────────────────────── -->
+    <section class="features">
+      <div class="features-inner">
+        <div class="feature">
+          <div class="feature-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2L4 5v6c0 5 3.5 8.5 8 11 4.5-2.5 8-6 8-11V5l-8-3z" stroke="#16A085" stroke-width="1.6" stroke-linejoin="round"/>
+              <path d="M9 12l2 2 4-4" stroke="#16A085" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>Highest level of privacy</h3>
+          <p>All anonymization processes take place locally on the client's computer.</p>
+        </div>
+        <div class="feature">
+          <div class="feature-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="12" cy="12" r="9" stroke="#16A085" stroke-width="1.6"/>
+              <path d="M12 7v5l3.5 2" stroke="#16A085" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>Full control</h3>
+          <p>You decide what is private information.<br />No AI-imposed decision.</p>
+        </div>
+        <div class="feature">
+          <div class="feature-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="4" y="4" width="16" height="16" rx="2" stroke="#16A085" stroke-width="1.6"/>
+              <path d="M4 10h16M10 4v16" stroke="#16A085" stroke-width="1.6"/>
+            </svg>
+          </div>
+          <h3>Database creation</h3>
+          <p>Anonymize a document and export any part of the data to Excel with one click.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────────────────────── VERSIONS / PRICING ───────────────────────── -->
+    <section class="versions" id="versions">
+      <div class="section-inner">
+        <h2 class="section-title">Versions</h2>
+
+        <div class="version-grid">
+
+          <!-- FREE -->
+          <div class="version-card">
+            <div class="version-card-head">
+              <h3>Free version</h3>
+              <p class="version-sub">Desktop app</p>
+            </div>
+            <ul class="version-features">
+              <li>PDF file processing <span class="muted">(3 files/day)</span></li>
+              <li>Anonymization of any text in a document <strong>(any language)</strong></li>
+              <li>Anonymized document flattening (PNG)</li>
+              <li>One file at a time</li>
+              <li>Export to Excel <span class="muted">(latin and kirilica symbols; 500 chars/day)</span></li>
+              <li>OS: Windows</li>
+            </ul>
+            <button class="btn btn-primary version-cta" id="downloadBtn">Download</button>
+          </div>
+
+          <!-- PDF ONLY -->
+          <div class="version-card version-card-upcoming">
+            <div class="version-card-head">
+              <h3>&ldquo;PDF Only&rdquo; version</h3>
+              <p class="version-sub">Desktop app</p>
+            </div>
+            <ul class="version-features">
+              <li>PDF file processing <span class="muted">(unlimited)</span></li>
+              <li>Anonymization of any text in a document <strong>(any language)</strong></li>
+              <li>Anonymized document flattening (PNG)</li>
+              <li>Multiple files at a time</li>
+              <li>Export to Excel <span class="muted">(latin and kirilica symbols; unlimited)</span></li>
+              <li>OS: Windows</li>
+            </ul>
+            <button class="btn btn-upcoming version-cta" disabled>Upcoming</button>
+          </div>
+
+          <!-- POLYFORMATIC -->
+          <div class="version-card version-card-upcoming">
+            <div class="version-card-head">
+              <h3>&ldquo;Polyformatic&rdquo; version</h3>
+              <p class="version-sub">Desktop app</p>
+            </div>
+            <ul class="version-features">
+              <li>PDF, JPG, PNG file processing <span class="muted">(unlimited)</span></li>
+              <li>Anonymization of any text in a document <strong>(PDF - any language; JPG/PNG – 85 languages)</strong></li>
+              <li>Anonymized document flattening (PNG)</li>
+              <li>Multiple files at a time</li>
+              <li>Export to Excel <span class="muted">(latin and kirilica symbols; unlimited)</span></li>
+              <li>OS: Windows</li>
+            </ul>
+            <button class="btn btn-upcoming version-cta" disabled>Upcoming</button>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────────────────────── HOW IT WORKS ───────────────────────── -->
+    <section class="how-it-works" id="how-it-works">
+      <div class="section-inner">
+        <h2 class="section-title">How it works</h2>
+
+        <div class="steps-grid">
+          <div class="step-card">
+            <div class="step-placeholder" aria-hidden="true">
+              <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="14" y="8" width="36" height="48" rx="4" stroke="#16A085" stroke-width="2"/>
+                <path d="M32 24v16M25 31l7-7 7 7" stroke="#16A085" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3>Upload your PDF</h3>
+            <ul class="check-list">
+              <li>Select your PDF file</li>
+              <li>Ready for analysis in seconds</li>
+            </ul>
+          </div>
+
+          <div class="step-card">
+            <div class="step-placeholder" aria-hidden="true">
+              <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="28" cy="28" r="14" stroke="#16A085" stroke-width="2"/>
+                <path d="M38 38l12 12" stroke="#16A085" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3>Analyze document</h3>
+            <ul class="check-list">
+              <li>Helps identify sensitive information</li>
+              <li>Shows text in an easy-to-review format</li>
+            </ul>
+          </div>
+
+          <div class="step-card">
+            <div class="step-placeholder" aria-hidden="true">
+              <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="12" y="14" width="40" height="8" rx="2" fill="#16A085" opacity="0.35"/>
+                <rect x="12" y="28" width="40" height="8" rx="2" fill="#16A085"/>
+                <rect x="12" y="42" width="24" height="8" rx="2" fill="#16A085" opacity="0.35"/>
+              </svg>
+            </div>
+            <h3>Select information to hide</h3>
+            <ul class="check-list">
+              <li>Select specific text lines</li>
+              <li>Or/and choose exact text fragments</li>
+            </ul>
+          </div>
+
+          <div class="step-card">
+            <div class="step-placeholder" aria-hidden="true">
+              <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="10" y="20" width="44" height="32" rx="4" stroke="#16A085" stroke-width="2"/>
+                <path d="M10 26h44" stroke="#16A085" stroke-width="2"/>
+                <circle cx="18" cy="23" r="1.4" fill="#16A085"/>
+              </svg>
+            </div>
+            <h3>Choose output options</h3>
+            <ul class="check-list">
+              <li>Select your output folder</li>
+              <li>Export selected information to Excel if needed</li>
+            </ul>
+          </div>
+
+          <div class="step-card">
+            <div class="step-placeholder" aria-hidden="true">
+              <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="14" y="8" width="36" height="48" rx="4" stroke="#16A085" stroke-width="2"/>
+                <path d="M23 32l6 6 12-13" stroke="#16A085" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3>Export anonymized file</h3>
+            <ul class="check-list">
+              <li>Clean anonymized version created</li>
+              <li>Original file remains untouched</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────────────────────── FAQ ───────────────────────── -->
+    <section class="faq" id="faq">
+      <div class="section-inner section-inner-narrow">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+
+        <div class="accordion" id="faqAccordion">
+
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false">
+              <span>What is Textymizer?</span>
+              <svg class="chevron" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="accordion-panel">
+              <p>Textymizer is a document anonymization tool that helps you quickly mask sensitive information. It allows you to select specific text or document lines and create a protected anonymized version.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false">
+              <span>What can I anonymize with Textymizer?</span>
+              <svg class="chevron" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="accordion-panel">
+              <p>You can hide any visible information inside your document, such as names, numbers, text fragments, references or other sensitive data that should not be shared.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false">
+              <span>How does Textymizer work?</span>
+              <svg class="chevron" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="accordion-panel">
+              <p>The process is simple: upload your PDF, analyze the document, select information to hide, and export your anonymized file.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false">
+              <span>Does Textymizer change my original document?</span>
+              <svg class="chevron" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="accordion-panel">
+              <p>No. Texty creates a new anonymized version. Your original PDF file remains unchanged.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false">
+              <span>Do I need special technical skills?</span>
+              <svg class="chevron" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="accordion-panel">
+              <p>No. Texty is designed for everyday users. The interface guides you through the anonymization process step by step.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false">
+              <span>Can I anonymize only specific parts of a document?</span>
+              <svg class="chevron" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="accordion-panel">
+              <p>Yes. You can choose specific document lines or enter exact text fragments that should be hidden.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false">
+              <span>Can I export my anonymized data?</span>
+              <svg class="chevron" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="accordion-panel">
+              <p>Yes. Textymizer can export selected information into an Excel file.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false">
+              <span>Does Textymizer support only PDF files?</span>
+              <svg class="chevron" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="accordion-panel">
+              <p>The Free Version and PDF Only version focus on PDF documents. The Polyformatic version is designed for PDF, JPG and PNG files.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false">
+              <span>What is the difference between Free Version, PDF Only and Polyformatic?</span>
+              <svg class="chevron" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="accordion-panel">
+              <p><strong>Free Version</strong><br/>Designed for testing and personal use with basic anonymization features.</p>
+              <p><strong>PDF Only</strong><br/>Designed for users who regularly work with PDF documents and need higher limits and multiple file upload.</p>
+              <p><strong>Polyformatic</strong><br/>Designed for users who need to work with PDF, JPG and PNG format support and multiple file upload.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false">
+              <span>Is Textymizer suitable for business use?</span>
+              <svg class="chevron" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="accordion-panel">
+              <p>Yes. Texty can help businesses, administrators and professionals prepare documents before sharing by removing confidential information.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false">
+              <span>Are my documents safe?</span>
+              <svg class="chevron" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="accordion-panel">
+              <p>Textymizer is designed with privacy in mind. The anonymization process focuses on creating a protected version while keeping your original document unchanged.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false">
+              <span>Does Textymizer upload my documents online?</span>
+              <svg class="chevron" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="accordion-panel">
+              <p>No. Textymizer is designed as a local application where document processing is performed directly on your computer.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false">
+              <span>Why use Textymizer instead of editing PDFs manually?</span>
+              <svg class="chevron" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="accordion-panel">
+              <p>Manual editing can be slow and error-prone. Texty provides a faster workflow where you can identify information, hide it and create a clean version with fewer steps.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false">
+              <span>Can I use Textymizer for legal, administrative or confidential documents?</span>
+              <svg class="chevron" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="accordion-panel">
+              <p>Yes. Texty is suitable for workflows where documents need to be prepared before sharing, archiving or sending to other parties.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false">
+              <span>What happens if I select the wrong information?</span>
+              <svg class="chevron" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="accordion-panel">
+              <p>Your original file remains unchanged, so you can review and create a new anonymized version whenever needed.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────────────────────── ABOUT ───────────────────────── -->
+    <section class="about" id="about">
+      <div class="section-inner section-inner-narrow">
+        <h2 class="section-title">About Textymizer</h2>
+        <div class="about-card">
+          <div class="about-accent"></div>
+          <div class="about-text">
+            <p>Textymizer is a lightweight document anonymization tool. It was created for everyday users, businesses, and professionals who need a fast, simple way to anonymize documents — without complicated software or AI making decisions on your behalf.</p>
+            <p>Textymizer lets you decide exactly what stays private. Select the lines or text fragments you want to mask, and create a clean, anonymized version in seconds — without ever touching your original file.</p>
+            <p>Everything happens locally, on your own computer. No documents are uploaded, no data is sent anywhere. Your files never leave your device.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ───────────────────────── FOOTER ───────────────────────── -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>&copy; 2026 Textymizer.com</p>
+      <nav class="footer-legal">
+        <a href="terms.html">Terms and Conditions</a>
+        <a href="privacy.html">Privacy Policy</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- ───────────────────────── DOWNLOAD MODAL ───────────────────────── -->
+  <div id="modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-content">
+      <button class="modal-close" id="cancelBtnTop" aria-label="Close">&times;</button>
+
+      <h3 id="modalTitle">Download Textymizer Free version</h3>
+      <p class="modal-subtitle">Enter your email to start the download.</p>
+
+      <input type="email" id="email" placeholder="you@example.com" autocomplete="email" />
+
+      <label class="checkbox-row">
+        <input type="checkbox" id="termsCheckbox" />
+        <span>I agree to the <a href="terms.html" target="_blank" rel="noopener">Terms</a> and <a href="privacy.html" target="_blank" rel="noopener">Privacy Policy</a></span>
+      </label>
+
+      <label class="checkbox-row">
+        <input type="checkbox" id="marketingCheckbox" />
+        <span>Keep me updated about Textymizer products.</span>
+      </label>
+
+      <!-- TURNSTILE -->
+      <div class="cf-turnstile"
+           data-sitekey="0x4AAAAAADiCqoTki0utuD0b"
+           data-callback="onTurnstileSuccess">
+      </div>
+
+      <div class="buttons">
+        <button id="confirmBtn" class="btn btn-primary" disabled>Confirm</button>
+        <button id="cancelBtn" class="btn btn-secondary">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ───────────────────────── CONTACT MODAL ───────────────────────── -->
+  <div id="contactModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="contactModalTitle">
+    <div class="modal-content modal-content-wide">
+      <button class="modal-close" id="contactModalClose" aria-label="Close">&times;</button>
+
+      <h3 id="contactModalTitle">Contact us</h3>
+      <p class="modal-subtitle">Send us a message and we'll get back to you.</p>
+
+      <form id="contactForm" class="contact-form">
+        <input type="hidden" name="access_key" value="dc88afcf-d29f-4983-b482-3a891cc19ce3" />
+        <input type="hidden" name="from_name" value="Textymizer.com Contact Form" />
+        <input type="checkbox" name="botcheck" style="display:none;" />
+
+        <div class="form-row-two">
+          <div class="form-group">
+            <label for="cf-name">Name</label>
+            <input type="text" id="cf-name" name="name" placeholder="Your name" />
+          </div>
+          <div class="form-group">
+            <label for="cf-email">Email</label>
+            <input type="email" id="cf-email" name="email" placeholder="you@example.com" required />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="cf-subject">Subject</label>
+          <input type="text" id="cf-subject" name="subject_field" placeholder="What is this about?" required />
+        </div>
+
+        <div class="form-group">
+          <label for="cf-message">Message</label>
+          <textarea id="cf-message" name="message" rows="5" placeholder="Your message..." required></textarea>
+        </div>
+
+        <div class="form-footer">
+          <button type="submit" class="btn btn-primary" id="cf-submit">Send message</button>
+          <p class="form-status" id="cf-status"></p>
+        </div>
+      </form>
+
+    </div>
   </div>
 
   <script src="script.js"></script>
-
 </body>
 </html>
