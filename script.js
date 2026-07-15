@@ -1,5 +1,6 @@
 const modal = document.getElementById("modal");
-const downloadBtn = document.getElementById("downloadBtn");
+const downloadBtn     = document.getElementById("downloadBtn");
+const heroDownloadBtn = document.getElementById("heroDownloadBtn");
 const confirmBtn = document.getElementById("confirmBtn");
 const cancelBtn = document.getElementById("cancelBtn");
 const cancelBtnTop = document.getElementById("cancelBtnTop");
@@ -10,10 +11,13 @@ const marketingCheckbox = document.getElementById("marketingCheckbox");
 let turnstileToken = "";
 
 // ─── OPEN MODAL ───────────────────────────────────────────────────────────────
-downloadBtn.addEventListener("click", () => {
+function openDownloadModal() {
   modal.classList.add("is-open");
   updateConfirmState();
-});
+}
+
+downloadBtn.addEventListener("click", openDownloadModal);
+if (heroDownloadBtn) heroDownloadBtn.addEventListener("click", openDownloadModal);
 
 // ─── CLOSE MODAL ─────────────────────────────────────────────────────────────
 cancelBtn.addEventListener("click", closeModal);
